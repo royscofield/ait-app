@@ -7,7 +7,6 @@ import { persistor, store } from "../public/redux/store"
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "styles/tailwind.css";
 import "styles/globals.css";
 import { PageLoading } from "public/shared";
 
