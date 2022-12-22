@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "assets/styles/tailwind.css";
+import "styles/tailwind.css";
 import Index from "pages";
 import Register from "pages/auth/register";
 import AuthProvider from "./context/AuthContext";
