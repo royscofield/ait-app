@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import CloseIcon from "public/icons/close";
 import { useRouter } from "next/router";
 
 //Component
@@ -54,7 +53,9 @@ export default function Menu(props) {
             </div>
             <div className="bg-white h-screen w-[300px] px-[20px] py-[30px] absolute z-10 left-0">
                 <button className="absolute right-2 top-2" onClick={() => {setShowMenu(!showMenu)}}>
-                    <CloseIcon />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-red-600">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                 </button>
                 <div className="flex gap-x-4 items-center mt-6">
                     <UserAvatar avatar={!user.pic ? (!user.photoURL ? defaultAvatar : user.photoURL) : user.pic} width={40} height={40} />
