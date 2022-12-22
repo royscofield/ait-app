@@ -1,0 +1,35 @@
+LƯU Ý: 
+- Sử dụng primaryColor và secondaryColor sẽ tạo ra màu Gradient
+  import { LEFT_COLOR, RIGHT_COLOR} from "public/util/colors";
+  < 
+    primaryColor={LEFT_COLOR}
+    secondaryColor={RIGHT_COLOR}
+  />
+- Truyền biến theo theo class tailwindcss
+ Ví dụ:
+  Thay vì truyền kiểu này: fontSize={36} 
+                          marginY = {4}
+  thì truyền theo className như này: fontSize="text-[36px]"
+                                    margin = "my-4"
+
+  
+Button.js sẽ thay thế cho các component sau: 
+  - BgBlueButton.js
+  - BgRedButton.js
+  - BgWhiteButton.js
+  - ButtonAndIcon.js
+  - ConfirmButton.js
+  - SingleColorButton.js
+
+Input.js sẽ thay thế cho các component sau:
+  - AuthInput.js
+  - TextNoLabel.js
+  - BorderText.js (truyền children)
+  - TextArea.js
+  
+Line.js sẽ thay thế cho các component sau:
+  - LineGradient.js
+  - GradientLine.js
+  - LineWithText.js
+
+Title.js sẽ thay thế cho component BigText.js
