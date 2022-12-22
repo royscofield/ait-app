@@ -27,7 +27,8 @@
     "build-static": "next build && next export -o _static",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
     "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css",
-    "build-css": "tailwind -i styles/index.css -o styles/tailwind.css --watch"
+    "build-css": "tailwind -i styles/index.css -o styles/tailwind.css --watch",
+    "css": "tailwind -i styles/index.css -o styles/tailwind.css"
   },
   "eslintConfig": {
     "extends": "react-app"
